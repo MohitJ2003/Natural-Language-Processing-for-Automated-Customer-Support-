@@ -8,10 +8,10 @@ def generate_response(text, intent, sentiment):
     if intent_name == 'order_status':
         return 'I can help track your order. Please provide your order ID.'
     if intent_name == 'refund':
-        return 'I'm sorry to hear that. Please share your order ID and reason for refund.'
+        return 'I\'m sorry to hear that. Please share your order ID and reason for refund.'
     if intent_name == 'goodbye':
         return 'Goodbye! Have a great day.'
     # fallback
     if sentiment.get('label') == 'negative':
-        return 'I'm sorry you had a bad experience. Could you share more details?'
+        return 'I\'m sorry you had a bad experience. Could you share more details?'
     return 'Thanks for reaching out — can you give more details so I can assist?'

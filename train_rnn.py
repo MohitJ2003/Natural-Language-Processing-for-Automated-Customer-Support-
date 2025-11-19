@@ -32,6 +32,17 @@ def train_model():
     loss_fn = nn.CrossEntropyLoss()
 
     samples = []  # TODO: Replace
+
+
+
+    samples = [
+    (torch.randint(0, 1000, (5,)), torch.tensor(0)),  # greeting
+    (torch.randint(0, 1000, (5,)), torch.tensor(1)),  # goodbye
+    (torch.randint(0, 1000, (5,)), torch.tensor(2)),  # order_status
+    (torch.randint(0, 1000, (5,)), torch.tensor(3)),  # refund
+    (torch.randint(0, 1000, (5,)), torch.tensor(4)),  # unknown
+        ]
+
     dataset = SimpleTextDataset(samples)
     loader = DataLoader(dataset, batch_size=4, shuffle=True)
 
