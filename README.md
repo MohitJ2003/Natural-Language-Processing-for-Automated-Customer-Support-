@@ -1,2 +1,17 @@
-# Natural-Language-Processing-for-Automated-Customer-Support-
-Implement a Recurrent Neural Network (RNN) based Al model for natural language processing (NLP).  The project aims to automate customer support interactions by analyzing and responding to customer  queries using sentiment analysis, intent recognition, and response generation techniques.
+# RNN-NLP Customer Support (Flask) - Project Skeleton
+
+This repository is a minimal skeleton for a Flask-based project that will implement
+an RNN-based NLP system for automating customer support (sentiment analysis,
+intent recognition, response generation). All code is intentionally simple/placeholder
+so you can expand later.
+
+## Structure
+- app.py - Flask app (simple routes)
+- requirements.txt - Python deps
+- nlp/ - placeholder NLP modules (sentiment, intent, response generation)
+- models/ - placeholder for trained models
+- templates/ - Flask HTML templates
+- static/ - static assets (CSS/JS)
+- utils/ - helper utilities
+- tests/ - basic test skeleton
+- Dockerfile - optional containerization
